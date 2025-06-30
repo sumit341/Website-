@@ -1,0 +1,142 @@
+
+body {
+  margin: 0;
+  background: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.neumorphic-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #e0e0e0;
+  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.nav-links a:hover {
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+section {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.hero {
+  background: #e0e0e0;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  background: #e0e0e0;
+  padding: 10px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature-card,
+.price-card {
+  background: #e0e0e0;
+  padding: 30px;
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+  transition: 0.3s ease;
+}
+
+.feature-card:hover,
+.price-card:hover {
+  box-shadow: inset 8px 8px 16px #bebebe, inset -8px -8px 16px #ffffff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e0e0e0;
+  box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #1e1e1e;
+    color: #f1f1f1;
+}
+
+body.dark-mode .neumorphic-navbar,
+body.dark-mode .hero,
+body.dark-mode .feature-card,
+body.dark-mode .price-card,
+body.dark-mode footer {
+    background: #2a2a2a;
+    box-shadow: 8px 8px 16px #141414, -8px -8px 16px #3a3a3a;
+}
+
+body.dark-mode .nav-links a,
+body.dark-mode .cta {
+    color: #f1f1f1;
+    background: #2a2a2a;
+    box-shadow: 5px 5px 10px #141414, -5px -5px 10px #3a3a3a;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .cta:hover {
+    box-shadow: inset 5px 5px 10px #141414, inset -5px -5px 10px #3a3a3a;
+}
